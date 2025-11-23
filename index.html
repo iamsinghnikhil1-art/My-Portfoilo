@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Singh Portfolio</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-color: #0e6251;    
+      --secondary-color: #1abc9c;  
+      --bg-light: #fdfdfd;       
+      --text-dark: #1b1b1b;       
+      --box-bg: #ffffff;           
+      --highlight: #020301;       
+      --border-radius: 15px;
+      --max-width: 900px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--highlight);
+    }
+
+    nav {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 20px auto;
+      padding: 15px 30px;
+      background: var(--primary-color);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: var(--border-radius);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-size: 16px;
+      padding-bottom: 3px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .profile-section {
+        width: 100%;
+        max-width: var(--max-width);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin: 40px auto;
+        padding: 30px 20px;
+        background: var(--box-bg);
+        border-radius: var(--border-radius); 
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .profile-section img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50% !important;
+        object-fit: cover;
+        border: 6px solid var(--primary-color) !important;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        margin-bottom: 20px;
+    }
+
+    .profile-section h1 {
+      font-size: 36px;
+      color: var(--primary-color);
+      margin-bottom: 10px;
+    }
+
+    .profile-section p.subtitle {
+      font-size: 18px;
+      color: #555;
+    }
+
+    section {
+      width: 100%;
+      max-width: var(--max-width);
+      background: var(--box-bg);
+      padding: 30px 25px;
+      margin: 30px auto;
+      border-radius: var(--border-radius);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    }
+
+    section h2 {
+      color: var(--primary-color);
+      margin-bottom: 15px;
+      font-size: 26px;
+    }
+
+    section p, section li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    ul.skills-list {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul.skills-list li {
+      background: var(--secondary-color);
+      color: white;
+      display: inline-block;
+      padding: 8px 15px;
+      margin: 5px;
+      border-radius: 50px;
+      font-weight: bold;
+    }
+
+    .contact-section p {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      margin-bottom: 12px;
+      gap: 10px;
+    }
+
+    .contact-section i {
+      color: var(--primary-color);
+      font-size: 20px;
+      min-width: 25px;
+    }
+
+    footer {
+      width: 100%;
+      max-width: var(--max-width);
+      text-align: center;
+      padding: 20px 0;
+      background: var(--primary-color);
+      color: white;
+      margin-top: 40px;
+      border-radius: var(--border-radius);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .profile-section img {
+        width: 150px;
+        height: 150px;
+      }
+      section h2 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Nikhil Singh</div>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="profile-section" id="home">
+    <img src="1727771087196.jpg" alt="Nikhil Singh">
+    <h1>Nikhil Singh</h1>
+    <p class="subtitle">Video Editor • Graphic Designer • Web Developer</p>
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p><strong>ID No:</strong> 8170038</p>
+    <p><strong>Faculty:</strong> DIT</p>
+    <p><strong>Batch:</strong> 2081</p>
+    <p><strong>Year/Sem:</strong> 2nd Year, 1st Semester</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Video Editor</li>
+      <li>Graphic Designer</li>
+      <li>Intermediate Web Developer</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <p><i class="fa-solid fa-phone"></i> 9709022622</p>
+    <p><i class="fa-solid fa-envelope"></i> 
+      <a href="mailto:nikhilsingh.its2064@gmail.com">Nikhi singh </a>
+    </p>
+    <p><i class="fa-brands fa-linkedin"></i> 
+      <a href="https://www.linkedin.com/in/nikhil-singh-8335a0389" target="_blank">LinkedIn</a>
+    </p>
+    <p><i class="fa-brands fa-github"></i> 
+      <a href="https://github.com/iamsinghnikhil1-art" target="_blank">GitHub</a>
+    </p>
+    <p><i class="fa-brands fa-x-twitter"></i> 
+      <a href="https://x.com/NIKHILSING35336" target="_blank">Twitter</a>
+    </p>
+  </section>
+  <footer>
+    Thank you for Visit 
+  </footer>
+
+</body>
+</html>
